@@ -4,6 +4,9 @@ Ext.define('Grubm.model.Business', {
     name: 'name',
     type: 'string'
   },{
+    name: 'normalized_name',
+    type: 'string'
+  },{
     name: 'city',
     type: 'string'
   },{
@@ -15,5 +18,6 @@ Ext.define('Grubm.model.Business', {
   },{
     name: 'zip',
     type: 'string'
-  }]
+  }],
+  hasMany: 'Grubm.model.Image'
 });

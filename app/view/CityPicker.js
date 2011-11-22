@@ -1,6 +1,6 @@
-Ext.define('Grubm.view.CityPickerTab', {
+Ext.define('Grubm.view.CityPicker', {
   extend: 'Ext.dataview.List',
-  xtype: 'citypicker',
+  xtype: 'citypickerview',
   config: {
     ui: 'citypicker',
     store: 'Cities',

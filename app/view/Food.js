@@ -1,6 +1,6 @@
-Ext.define('Grubm.view.FoodTab', {
+Ext.define('Grubm.view.Food', {
   extend: 'Ext.Container',
-  xtype: 'food',
+  xtype: 'foodview',
   requires: [
     'Grubm.view.SearchBar',
     'Grubm.view.Images'
@@ -11,7 +11,7 @@ Ext.define('Grubm.view.FoodTab', {
       docked: 'top',
       xtype: 'searchbar'
     },{
-      xtype: 'images',
+      xtype: 'imagesview',
       flex: 1
     }]
   }

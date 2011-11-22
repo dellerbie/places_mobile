@@ -5,9 +5,14 @@ Ext.define('Grubm.view.SearchBar', {
     defaults: {
       iconMask: true
     },
-    items: [
-      { xtype: 'textfield', name: 'q' },
-      { iconCls: 'search' }
-    ]
+    items: [{
+      ui: 'back',
+      text: 'Back'
+    },{ 
+      xtype: 'textfield', 
+      name: 'q' 
+    },{ 
+      iconCls: 'search' 
+    }]
   }
 });

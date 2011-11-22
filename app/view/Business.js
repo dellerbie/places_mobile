@@ -11,7 +11,7 @@ Ext.define('Grubm.view.Business', {
           '<span class="place">{name}</span>',
           '<span class="street">{street}</span>',
           '<span class="city-state-zip">{city}, {state} {zip}</span>',
-          '<a class="map" href="http://maps.google.com/maps?q=8432+W+3rd+St+Los+Angeles+CA+90048">map</a>',
+          '<a class="map" href="{map}">map</a>',
         '</div>',
         '<h3>More Photos from {name}</h3>',
       '</tpl>',
@@ -19,6 +19,14 @@ Ext.define('Grubm.view.Business', {
         '<img src="{url}" />',
         '<span class="what">{description}</span>',
       '</tpl>'
-    )
+    ),
+    items: [{
+      docked: 'top',
+      xtype: 'toolbar',
+      items: [{
+        ui: 'back',
+        text: 'Back'
+      }]
+    }]
   }
 });

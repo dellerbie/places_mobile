@@ -9,5 +9,5 @@ Ext.define('Grubm.store.Images', {
       type: 'json'
     }
   },
-  autoLoad: true
+  autoLoad: false
 });

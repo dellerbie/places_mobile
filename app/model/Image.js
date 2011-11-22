@@ -7,10 +7,7 @@ Ext.define('Grubm.model.Image', {
     name: 'description',
     type: 'string'
   },{
-    name: 'city',
-    type: 'string'
-  },{
     name: 'business'
   }],
-  hasOne: 'Grubm.model.Business'
+  hasOne: { model: 'Grubm.model.Business', name: 'business' }
 });

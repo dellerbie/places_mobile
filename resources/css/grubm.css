@@ -41,12 +41,10 @@
   display: inline;
 }
 
-.x-dataview-business {
-  padding: .5em 1em;
-}
 
 .x-dataview-business .business-wrapper {
   margin-bottom: .5em;
+  padding: .5em 1em;
   font-family: 'Palatino-Roman';
 }
 

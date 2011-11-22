@@ -1,26 +1,32 @@
 Ext.define('Grubm.view.Main', {
   extend: 'Ext.TabPanel',
+  xtype: 'mainview',
   requires: [
-    'Grubm.view.CityPickerTab',
-    'Grubm.view.FoodTab',
-    'Grubm.view.Business'
+    'Grubm.view.CityPicker'
   ],
-  
   config: {
     fullscreen: true,
     tabBarPosition: 'bottom',
     items: [{
-      xtype: 'citypicker',
-      title: 'Cities',
-      iconCls: 'home'
-    },{
-      xtype: 'food',
-      title: 'Food',
-      iconCls: 'user'
-    },{
-      xtype: 'businessview',
-      title: 'Details',
-      iconCls: 'user'
+      id: 'maincontainer',
+      xtype: 'container',
+      layout: 'card',
+      animation: {
+        type: 'slide',
+        direction: 'left'
+      },
+      title: 'Find Food',
+      iconCls: 'home',
+      items:[{
+        xtype: 'citypickerview',
+        flex: 1
+      },{
+        xtype: 'foodview',
+        flex: 1
+      },{
+        xtype: 'businessview',
+        flex: 1
+      }]
     }]
   }
 });
