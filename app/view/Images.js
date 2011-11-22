@@ -1,6 +1,7 @@
 Ext.define('Grubm.view.Images', {
   extend: 'Ext.dataview.DataView',
   xtype: 'imagesview',
+  requires: ['Ext.plugins.ListPagingPlugin'],
   config: {
     ui: 'images-view',
     store: 'Images',
@@ -15,6 +16,10 @@ Ext.define('Grubm.view.Images', {
         '</tpl>',
       '</div>'
     ),
-    emptyText: "No images to show.  Sorry dog."
+    emptyText: "No images to show.  Try a different search.",
+    plugins: [{
+      ptype: 'listpaging',
+      autoPaging: false
+    }]
   }
 });

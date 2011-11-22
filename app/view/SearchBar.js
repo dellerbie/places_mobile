@@ -9,10 +9,15 @@ Ext.define('Grubm.view.SearchBar', {
       ui: 'back',
       text: 'Back'
     },{ 
-      xtype: 'textfield', 
-      name: 'q' 
-    },{ 
-      iconCls: 'search' 
+      xtype: 'searchfield', 
+      placeHodler: 'Search',
+      useClearIcon: true,
+      name: 'q' ,
+      onClearIconTap: function() {
+        this.setValue('');
+        this.hideClearIcon();
+        this.fireEvent('searchclear');
+      }
     }]
   }
 });
