@@ -1,5 +1,6 @@
 Ext.define('Grubm.model.Business', {
   extend: 'Ext.data.Model',
+  requires: ['Grubm.model.Image'],
   fields: [{
     name: 'name',
     type: 'string'

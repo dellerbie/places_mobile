@@ -1,0 +1,24 @@
+embed_assets: off
+
+javascripts:
+  grubm:
+    - touch/sencha-touch-all.js
+    - plugins/list/ListPaging.js
+    - app/model/City.js
+    - app/model/Image.js
+    - app/model/Business.js
+    - app/store/Cities.js
+    - app/store/Businesses.js
+    - app/store/Images.js
+    - app/view/Business.js
+    - app/view/SearchBar.js
+    - app/view/CityPicker.js
+    - app/view/Images.js
+    - app/view/Food.js
+    - app/view/Main.js
+    - app/controller/Main.js
+    - Grubm.js
+    
+stylesheets:
+  grubm:
+    - resources/css/grubm.css
