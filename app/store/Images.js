@@ -4,7 +4,7 @@ Ext.define('Grubm.store.Images', {
   requires: ['Grubm.model.Image'],
   proxy: {
     type: 'jsonp',
-    url: 'http://192.168.1.71:3000/.json'
+    url: 'http://la.grubm.com/.json'
   },
   autoLoad: false
 });

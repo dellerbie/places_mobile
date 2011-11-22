@@ -3,7 +3,7 @@ Ext.define('Grubm.store.Businesses', {
   fields:['business', 'images'],
   proxy: {
     type: 'jsonp',
-    url: 'http://192.168.1.71:3000/business/.json'
+    url: 'http://la.grubm.com/business/.json'
   },
   autoload: false
 });
